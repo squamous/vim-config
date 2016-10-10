@@ -1,3 +1,10 @@
+let mapleader = ','
+nmap <c-h> <c-w>h
+nmap <c-l> <c-w>l
+nmap <c-k> <c-w>k
+nmap <c-j> <c-w>j
+map <Leader>f :NERDTreeToggle<CR>
+
 "--------------------------------------------------
 " NeoBundle Init
 
@@ -279,13 +286,13 @@ nnoremap <silent><leader>/ :Unite grep:. -no-start-insert -no-quit -keep-focus -
 " NERDTree
 
 " Tell NERDTree to display hidden files on startup
-let NERDTreeShowHidden=1
+" let NERDTreeShowHidden=1
 
 " Disable bookmarks label, and hint about '?'
 let NERDTreeMinimalUI=1
 
 " Display current file in the NERDTree ont the left
-nmap <silent> <leader>f :NERDTreeFind<CR>
+" nmap <silent> <leader>f :NERDTreeFind<CR>
 
 "-------------------------
 " Syntastic
@@ -394,7 +401,7 @@ nmap <silent> <leader>tn :TernRename<CR>
 " Solarized
 
 " if You have problem with background, uncomment this line
-" let g:solarized_termtrans=1
+let g:solarized_termtrans=1
 
 "-------------------------
 " neosnippets
@@ -511,10 +518,10 @@ call arpeggio#map('i', '', 0, 'jk', '<ESC>')
 colorscheme solarized
 
 " Setting up light color scheme
-set background=light
+set background=dark
 
 " set highlighting for colorcolumn
-highlight ColorColumn ctermbg=lightGrey
+" highlight ColorColumn ctermbg=lightGrey
 
 "--------------------------------------------------
 " General options
